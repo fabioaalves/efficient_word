@@ -6,14 +6,14 @@ import pyaudio
 from typing import Tuple, List, Union
 
 from efficient_word.audio_processing import ModelRawBackend, Resnet50_Arc_loss
-from efficient_word import RATE
 from time import time as current_time_in_sec
 import logging
 
 from efficient_word.audio_processing import MODEL_TYPE_MAPPER
 
+RATE = 16000
 
-class HotwordDetector:
+class HotwordDetector:    
     """
     EfficientWord based HotwordDetector Engine implementation class
     """
