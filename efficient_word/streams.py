@@ -2,10 +2,10 @@ import pyaudio
 from typing import Tuple, Callable
 import numpy as np
 from efficient_word.engine import HotwordDetector
-from efficient_word import RATE
 
 NoParameterFunction = Callable[[], None]
 AudioFrameFunction = Callable[[], np.array]
+RATE = 16000
 
 
 class CustomAudioStream:
