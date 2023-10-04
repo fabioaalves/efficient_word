@@ -138,11 +138,9 @@ from enum import Enum
 
 
 class ModelType(str, Enum):
-    first_iteration_siamese = "first_iteration_siamese"
     resnet_50_arc = "resnet_50_arc"
 
 
 MODEL_TYPE_MAPPER = {
-    "first_iteration_siamese": First_Iteration_Siamese,
     "resnet_50_arc": Resnet50_Arc_loss
 }
